@@ -82,13 +82,17 @@ export default function Process() {
               className={cn("relative opacity-0 transform translate-y-8", `animation-delay-${(index + 3) * 100}`)}
               ref={(el) => (cardsRef.current[index] = el)}
             >
-              <div className="absolute -top-5 -left-5 w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl animate-pulse-slow">
-                {step.number}
+              <div className="relative p-6 rounded-lg bg-card">
+                <div 
+                  className="absolute -top-6 -left-6 w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xl font-bold process-number"
+                >
+                  {step.number}
+                </div>
+                <div className="mt-4 ml-4">  {/* Added margin to account for circle overlap */}
+                  <h3 className="text-xl font-bold mb-2">{step.title}</h3>
+                  <p className="text-muted-foreground">{step.description}</p>
+                </div>
               </div>
-              <CardContent className="p-6 pt-10">
-                <h3 className="text-xl font-bold mb-3">{step.title}</h3>
-                <p className="text-muted-foreground">{step.description}</p>
-              </CardContent>
               <div className="absolute h-1 bg-primary/70 bottom-0 left-0 w-0 group-hover:w-full transition-all duration-700"></div>
             </Card>
           ))}

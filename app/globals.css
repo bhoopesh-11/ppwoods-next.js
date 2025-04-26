@@ -220,3 +220,8 @@
 .animation-delay-1000 {
   animation-delay: 1s;
 }
+
+.dark .process-number {
+  color: hsl(24 9.8% 10%);  /* dark text color */
+  background-color: hsl(60 9.1% 97.8%);  /* light background */
+}
