@@ -86,7 +86,7 @@ export default function ContactCta() {
           <div className="group">
             <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors duration-300">Address</h3>
             <p className="text-muted-foreground group-hover:text-foreground transition-colors duration-300">
-              Ramasagara Rd, Muthanallur, Bengaluru, Karnataka 560099
+                Plot No 4, Shop No 8, , Bay Blish Building, Sectore 9, Navi Mumbai., Ulwe-410206
             </p>
           </div>
         </div>

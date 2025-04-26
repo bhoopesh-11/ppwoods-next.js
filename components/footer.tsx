@@ -165,7 +165,7 @@ export default function Footer() {
                   <circle cx="12" cy="10" r="3" />
                 </svg>
                 <span className="text-muted-foreground group-hover:text-foreground transition-colors">
-                  Ramasagara Rd, Muthanallur, Bengaluru, Karnataka 560099
+                      Plot No 4, Shop No 8, , Bay Blish Building, Sectore 9, Navi Mumbai., Ulwe-410206
                 </span>
               </li>
             </ul>
