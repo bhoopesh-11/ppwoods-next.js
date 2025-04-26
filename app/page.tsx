@@ -10,14 +10,14 @@ import { Products } from "@/components/products"  // Add this import
 
 export default function Home() {
   return (
-    <div className="flex flex-col w-full">
+    <div className="flex flex-col w-full overflow-x-hidden">
       <HeroSection />
       <AboutUs />
       <Services />
-      <div className="bg-muted py-16">
-        <div className="container mx-auto px-4">
+      <div className="bg-muted py-8 md:py-16 w-full">
+        <div className="container mx-auto px-4 max-w-full">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Experience Our Craft</h2>
-          <div className="aspect-video max-w-4xl mx-auto rounded-lg overflow-hidden shadow-xl">
+          <div className="aspect-video max-w-4xl mx-auto rounded-lg overflow-hidden shadow-xl w-full">
             <iframe
               src="/PPwods_compressed.pdf"
               className="w-full h-full border-0"
